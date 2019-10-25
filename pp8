@@ -1,0 +1,25 @@
+print("Rock-Paper-Scissors game")
+
+rules = {
+    "rock": "scissors",
+    "scissors":"paper",
+    "paper":"rock"
+}
+game = input("Enter START if you want to start.\nEnter QUIT if you want to quit.\n")
+game = game.lower()
+while True:
+    if game == "start":
+        first_player = input("First players's step: ")
+        second_player = input("Second player's step: ")
+        first_player = first_player.lower()
+        second_player = second_player.lower()
+        if rules[first_player] == second_player:
+            print("First player wins. Congratulations!")
+        elif first_player == rules[second_player]:
+            print("Second player wins. Congratulations!")
+        elif first_player == second_player:
+            print("Draw!")
+        else:
+            print("Wrong input.")
+    elif game == "quit":
+        break
