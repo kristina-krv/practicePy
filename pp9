@@ -1,0 +1,13 @@
+import random
+guess = True
+number = random.randint(1, 9)
+while guess == True:
+    guess_number = input("Guess the number: ")
+    guess_number = int(guess_number)
+    if guess_number == number:
+        print("Exactly right.")
+        guess = False
+    elif guess_number > number:
+        print("Too high.")
+    else:
+        print("Too low.")
