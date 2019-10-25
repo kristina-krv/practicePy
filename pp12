@@ -1,0 +1,14 @@
+import random
+def get_random_list(size):
+    global list
+    list = random.sample(range(100), size)
+    print(list)
+new_list = []
+def get_new_list():
+    global new_list
+    new_list = [list[0], list[-1]]
+    print(new_list)
+def final_function():
+    get_random_list(int(input("Choose number of elements in your random list: ")))
+    get_new_list()
+final_function()
