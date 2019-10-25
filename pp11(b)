@@ -1,0 +1,17 @@
+number = 0
+def get_number():
+    global number
+    number = int(input("Give me a number: "))
+def primality():
+    global number
+    for n in range(2, number+1):
+        if number % n == 0:
+            print("This number is not prime.")
+            break
+        else:
+            print("This number is prime.")
+            break
+def final_function():
+    get_number()
+    primality()
+final_function()
