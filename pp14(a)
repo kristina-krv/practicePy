@@ -1,0 +1,9 @@
+def remove_duplicates(list):
+    new_list = []
+    for element in list:
+        new_list.append(element)
+        if new_list.count(element) > 1:
+            new_list.remove(element)
+    return new_list
+
+
