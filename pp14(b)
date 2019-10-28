@@ -1,0 +1,3 @@
+def remove_duplicates(using_sets):
+    using_sets = set(using_sets)
+    return using_sets
