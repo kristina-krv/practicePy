@@ -1,0 +1,4 @@
+l = [11, 44, 34, 1, 4]
+new_l = sorted(l)
+new_l = new_l[-3:]
+print(new_l)
