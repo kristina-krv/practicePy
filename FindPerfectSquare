@@ -1,0 +1,8 @@
+def find_next_square(sq):
+    # Return the next square if sq is a square, -1 otherwise
+    for n in range(0, sq):
+        if n*n == sq:
+            n = n+1
+            return n*n
+    return -1
+    # !!!!!doesn t work with large number. MEMORY
