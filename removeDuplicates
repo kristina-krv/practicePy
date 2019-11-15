@@ -1,0 +1,6 @@
+def removeDup(str):
+    return "".join(set(str))
+def longest(s1,s2):
+    string = s1.join(s2)
+    string = removeDup(string)
+    return string
