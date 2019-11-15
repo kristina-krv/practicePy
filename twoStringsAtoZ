@@ -1,0 +1,11 @@
+def removeDupWithoutOrder(str):
+    return "".join(set(str))
+def longest(s1,s2):
+    string = removeDupWithoutOrder(s1.join(s2))
+    final_string = ""
+    while string != "":
+        for char in string:
+            if char == min(string):
+                final_string += char
+                string = string.replace(char, "")
+    return final_string
